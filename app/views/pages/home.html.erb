@@ -1,3 +1,6 @@
+<% if user_signed_in? %>
+	<h1>Hey...like...welcome back!</h1>
+<% else %>
 <div class="hero-unit">
 	<h1>Welcome to AlisT!</h1>
 	<p>
@@ -8,6 +11,7 @@
 		This site was built with the class called <%= link_to "One Month Rails", "http://onemonthrails.com" %>
 		</p>
 	<p>
-		<%= link_to "Sign me up!", "#", class: "btn btn-inverse btn-large" %>
+		<%= link_to "Sign me up!", new_user_registration_path, class: "btn btn-inverse btn-large" %>
 	</p>	
 </div>
+<% end %>
