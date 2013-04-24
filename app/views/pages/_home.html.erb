@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-	<h1>Hey...like...welcome back!</h1>
+
 <% else %>
 <div class="hero-unit">
 	<h1>Welcome to AlisT!</h1>
@@ -7,9 +7,6 @@
 	In the future, there will be a very cool site here where you can make a wish list
 		to share with your friends and family. 
 	</p>
-		<p>
-		This site was built with the class called <%= link_to "One Month Rails", "http://onemonthrails.com" %>
-		</p>
 	<p>
 		<%= link_to "Sign me up!", new_user_registration_path, class: "btn btn-inverse btn-large" %>
 	</p>	
