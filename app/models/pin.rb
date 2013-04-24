@@ -1,5 +1,5 @@
 class Pin < ActiveRecord::Base
-  attr_accessible :description, :image
+  attr_accessible :description, :image, :url
 
 
   validates :description, presence: true, :length => { :maximum => 177 }
