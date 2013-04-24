@@ -4,6 +4,7 @@
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
   	<%= f.input :image, label: "Upload an image" %>
+  	<%= f.input :description, as: :url, input_html: { rows: "1"}, label: "On web at" %>
     <%= f.input :description, as: :text, input_html: { rows: "3"} %>
   </div>
 
