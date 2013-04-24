@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = Pin.all
+    @pins = Pin.order("created_at desc")
     #change to current_user.pins.all to make private pin system.
 
     respond_to do |format|
