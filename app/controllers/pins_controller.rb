@@ -4,7 +4,7 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = Pin.order("created_at desc")
+    @pins = Pin.order("created_at desc").page(params[:page]).per_page(20)
     #change to current_user.pins.all to make private pin system.
 
     respond_to do |format|

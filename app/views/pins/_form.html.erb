@@ -2,9 +2,10 @@
   <%= f.error_notification %>
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
-
+  <div class="column">
   	<%= f.input :image, label: "Upload an image" %>
     <%= f.input :image_remote_url, label: "or image url" %>
+  </div>
   	<%= f.input :url, as: :url, input_html: { rows: "1"}, label: "Can buy at" %>
     <%= f.input :description, as: :text, input_html: { rows: "3"} %>
   </div>
